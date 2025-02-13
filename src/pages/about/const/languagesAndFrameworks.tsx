@@ -1,6 +1,6 @@
 // Languages and Frameworks data
 const languagesAndFrameworks = [
- '../../../../assets/images/java.svg',
+ '/../../assets/images/java.svg',
   './././assets/images/cpp.svg',
   './././assets/images/html.svg',
   '/assets/images/css.svg',
@@ -15,7 +15,7 @@ const languagesAndFrameworks = [
   '/assets/images/slack.svg',
   '/assets/images/ps.svg',
   '/assets/images/ai.svg',
-  '/images/figma.svg',
+  '/public/figma.svg',
   ];
 
   export default languagesAndFrameworks;
