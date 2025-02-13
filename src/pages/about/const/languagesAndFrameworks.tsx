@@ -3,7 +3,7 @@ const languagesAndFrameworks = [
  '../../../assets/images/java.svg',
   './././assets/images/cpp.svg',
   './././assets/images/html.svg',
-  '/assets/images/css.svg',
+  './assets/images/css.svg',
   '/assets/images/python.svg',
   '/assets/images/react.svg',
   '/assets/images/sql.svg',
