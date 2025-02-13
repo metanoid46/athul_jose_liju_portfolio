@@ -1,6 +1,6 @@
 import { Box, Button, Container, Typography } from '@mui/material';
-import React, { useEffect } from 'react';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { useEffect } from 'react';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 export const Home = () => {

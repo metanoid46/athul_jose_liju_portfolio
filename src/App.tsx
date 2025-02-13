@@ -1,5 +1,5 @@
 // App.tsx
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import AppBar from './Components/Navbar/Appbar'; // Your AppBar component file
 import Home from './pages/home/Home';
 import About from './pages/about/About';

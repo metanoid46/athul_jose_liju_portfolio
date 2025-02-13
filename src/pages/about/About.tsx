@@ -1,5 +1,5 @@
 import { Box, Chip, Container, Typography } from '@mui/material';
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import experienceData from './const/experiencedata'

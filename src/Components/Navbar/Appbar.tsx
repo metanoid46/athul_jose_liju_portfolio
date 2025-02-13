@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MUIAppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { List, ListItemButton, ListItemText, Drawer } from '@mui/material';
+import { List, ListItemButton, ListItemText } from '@mui/material';
 import { AppBarConst } from './Const/AppBarConst';
 
 interface AppBarProps {
   onNavigate: (section: string) => void;
 }
 
-const AppBarComponent: React.FC<AppBarProps> = ({ onNavigate }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleDrawerToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+const AppBarComponent: React.FC<AppBarProps> = ({ onNavigate }) => { 
 
   return (
     <>
