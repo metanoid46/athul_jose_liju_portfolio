@@ -1,6 +1,6 @@
 // Languages and Frameworks data
 const languagesAndFrameworks = [
-    '/java.svg',
+  "../../assets/java.svg",
     '/cpp.svg',
     '/html.svg',
     '/css.svg',
