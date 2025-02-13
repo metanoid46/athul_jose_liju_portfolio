@@ -15,7 +15,7 @@ const languagesAndFrameworks = [
   '/assets/images/slack.svg',
   '/assets/images/ps.svg',
   '/assets/images/ai.svg',
-  '/assets/images/figma.svg',
+  '/images/figma.svg',
   ];
 
   export default languagesAndFrameworks;
