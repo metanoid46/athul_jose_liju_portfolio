@@ -19,7 +19,7 @@ const AppBarComponent: React.FC<AppBarProps> = ({ onNavigate }) => {
         <Toolbar>
           
           {/* Logo */}
-          <img src='/logo.svg' alt="Logo" style={{ height: '40px', marginRight: '20px' }} />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo" style={{ height: '40px', marginRight: '20px' }} />
           
           <Typography
             variant="h6"
