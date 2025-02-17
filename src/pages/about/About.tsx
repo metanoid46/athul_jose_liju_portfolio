@@ -58,7 +58,7 @@ export const About = () => {
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                 {experience.skills.map((skill, skillIndex) => (
-                  <Chip key={skillIndex} label={skill} sx={{ p: 1, m: 1, bgcolor: '#A12C2C', color: '#DCC196', fontSize: { xs: '8px', sm: '10px', md: '16px' } }} />
+                  <Chip key={skillIndex} label={skill} sx={{ p: 1, m: 1, bgcolor: '#A12C2C', color: '#DCC196', fontSize: { xs: '12px', sm: '16px', md: '20px' } }} />
                 ))}
               </Box>
             </Box>
