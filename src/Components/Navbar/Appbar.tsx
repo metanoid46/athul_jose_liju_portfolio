@@ -1,6 +1,7 @@
 import React from 'react';
 import MUIAppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import  Logo from '../../assets/logo.svg'
 
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -19,7 +20,7 @@ const AppBarComponent: React.FC<AppBarProps> = ({ onNavigate }) => {
         <Toolbar>
           
           {/* Logo */}
-          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo" style={{ height: '40px', marginRight: '20px' }} />
+          <img src={Logo} alt="Logo" style={{ height: '40px', marginRight: '20px' }} />
           
           <Typography
             variant="h6"
