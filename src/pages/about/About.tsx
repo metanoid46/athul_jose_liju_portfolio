@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Resume from '../../assets/Resume.pdf';
 import experienceData from './const/experiencedata'
 import educationData from './const/educationData';
-
+import languagesAndFrameworks from './const/languagesAndFrameworks';
 import javaLogo from '../../assets/java.svg';
 import cppLogo from '../../assets/cpp.svg';
 import htmlLogo from '../../assets/html.svg';
@@ -109,28 +109,45 @@ export const About = () => {
           Languages and Frameworks
           <hr style={{ color: '#A12C2C' }} />
         </p>
-            
-        <img src={javaLogo} alt="Java Logo" width="35" />
-<img src={cppLogo} alt="C++ Logo" width="35" />
-<img src={htmlLogo} alt="HTML Logo" width="35" />
-<br />
-<img src={cssLogo} alt="CSS Logo" width="35" />
-<img src={pythonLogo} alt="Python Logo" width="35" />
-<img src={reactLogo} alt="React Logo" width="35" />
-<br/>
-<img src={sqlLogo} alt="SQL Logo" width="35" />
-<img src={muiLogo} alt="Material UI Logo" width="35" />
-<img src={nodeLogo} alt="Node.js Logo" width="35" />
-<br />
-<img src={jsLogo} alt="JavaScript Logo" width="35" />
-<img src={nextLogo} alt="Next.js Logo" width="35" />
-<img src={postgreLogo} alt="PostgreSQL Logo" width="35" />
-<br />
-<img src={slackLogo} alt="Slack Logo" width="35" />
-<img src={psLogo} alt="Photoshop Logo" width="35" />
-<img src={aiLogo} alt="Adobe Illustrator Logo" width="35" />
-<br />
-<img src={figmaLogo} alt="Figma Logo" width="35" />
+        <Box 
+  sx={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-start',
+    gap: 1, // Add gap for spacing between images
+    margin: '0 auto', // Center content
+    maxWidth: '100%', // Ensure the content doesn't overflow
+    padding: '10px 0', // Add vertical padding for spacing
+  }} 
+  data-aos="fade-up"
+>
+  {languagesAndFrameworks.map((lang, index) => (
+    <Box 
+      key={index} 
+      sx={{
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center',
+        padding: '5px',
+        width: '50px', // Control width on mobile
+        height: '50px', // Control height
+        maxWidth: '100%', // Make image responsive
+        minWidth: '40px', // Ensure smaller sizes for mobile
+        flexShrink: 0, // Prevent shrinking
+      }}
+    >
+      <img 
+        src={lang} 
+        alt={`Language ${index}`} 
+        style={{
+          width: '100%', // Make image scale properly within its container
+          height: 'auto', // Maintain aspect ratio
+          objectFit: 'contain', // Prevent stretching
+        }} 
+      />
+    </Box>
+  ))}
+</Box>
 
 
         <br /> 
