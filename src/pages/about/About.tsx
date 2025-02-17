@@ -110,12 +110,9 @@ export const About = () => {
         <Box 
   sx={{
     display: 'flex',
-    flexWrap: 'wrap',
     justifyContent: 'flex-start',
     gap: 2, // Add gap for spacing between images
-    margin: '0 auto', // Center content
-    maxWidth: '100%', // Ensure the content doesn't overflow
-    padding: '10px 0', // Add vertical padding for spacing
+    
   }} 
   data-aos="fade-up"
 >
