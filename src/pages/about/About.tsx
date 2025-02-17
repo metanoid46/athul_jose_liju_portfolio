@@ -94,13 +94,23 @@ export const About = () => {
           Languages and Frameworks
           <hr style={{ color: '#A12C2C' }} />
         </p>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-aos="fade-up">
-          {languagesAndFrameworks.map((lang, index) => (
-            <img key={index} src={lang} style={{ margin: '5px', width: '50px', height: '50px' }} />
-          ))}
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }} data-aos="fade-up">
+  {languagesAndFrameworks.map((lang, index) => (
+    <Box key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5px' }}>
+      <img 
+        src={lang} 
+        alt={`Language ${index}`} 
+        style={{
+          width: '50px', 
+          height: '50px', 
+          maxWidth: '100%', 
+          objectFit: 'contain', // Ensure the image doesn't stretch/distort
+        }} 
+      />
+    </Box>
+  ))}
+</Box>
 
-      
-        </Box>
         <br /> 
           <p style={{marginTop:"10px"}} data-aos="fade-up">
             need a copy of my        <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>??
