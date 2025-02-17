@@ -36,9 +36,22 @@ export const About = () => {
             data-aos="fade-up"
           >
             <Box sx={{ mb: { xs: 3, sm: 0 }, mr: { sm: 5 } }}>
-              <p style={{ fontSize: '24px', fontWeight: 'bold' }}>{experience.title}</p>
-              <p style={{ fontSize: '20px' }}>{experience.company} | {experience.duration}</p>
-              <Typography variant="body1" sx={{ fontSize: '20px', lineHeight: '1.6' }}>
+            <Typography
+  variant="body1"
+  sx={{
+    fontSize: { xs: '14px', sm: '18px', md: '24px' }, // Adjust font size based on screen width
+    textAlign: 'justify',
+    lineHeight: 1.6,
+    fontWeight:'bold',
+  }}>{experience.title}</Typography>
+              <Typography
+  variant="body1"
+  sx={{
+    fontSize: { xs: '12px', sm: '16px', md: '20px' }, // Adjust font size based on screen width
+    textAlign: 'justify',
+    lineHeight: 1.6,
+  }}>{experience.company} | {experience.duration}</Typography>
+              <Typography variant="body1" sx={{fontSize: { xs: '12px', sm: '16px', md: '20px' }, lineHeight: '1.6' }}>
                 {experience.description}
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
@@ -55,11 +68,24 @@ export const About = () => {
           <hr style={{ color: '#A12C2C' }} />
         </p>
         <Box data-aos="fade-up">
-          <p style={{ fontSize: '24px', fontWeight: 'bold' }}>{educationData.degree}</p>
-          <p style={{ fontSize: '20px' }}>
+        <Typography
+  variant="body1"
+  sx={{
+    fontSize: { xs: '14px', sm: '18px', md: '24px' }, // Adjust font size based on screen width
+    textAlign: 'justify',
+    lineHeight: 1.6,
+    fontWeight:'bold'
+  }}>{educationData.degree}</Typography>
+                  <Typography
+  variant="body1"
+  sx={{
+    fontSize: { xs: '12px', sm: '16px', md: '20px' }, // Adjust font size based on screen width
+    textAlign: 'justify',
+    lineHeight: 1.6,
+  }}>
             {educationData.university} | {educationData.duration}<br />
             {educationData.scholarship}
-          </p>
+          </Typography>
         </Box>
   
         <p style={{ fontSize: '38px', fontWeight: 'bold' }} data-aos="fade-up">
