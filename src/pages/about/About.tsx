@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Resume from '../../assets/Resume.pdf';
 import experienceData from './const/experiencedata'
 import educationData from './const/educationData';
-import languagesAndFrameworks from './const/languagesAndFrameworks';
+
 import javaLogo from '../../assets/java.svg';
 import cppLogo from '../../assets/cpp.svg';
 import htmlLogo from '../../assets/html.svg';
@@ -113,18 +113,23 @@ export const About = () => {
         <img src={javaLogo} alt="Java Logo" width="35" />
 <img src={cppLogo} alt="C++ Logo" width="35" />
 <img src={htmlLogo} alt="HTML Logo" width="35" />
+<br />
 <img src={cssLogo} alt="CSS Logo" width="35" />
 <img src={pythonLogo} alt="Python Logo" width="35" />
 <img src={reactLogo} alt="React Logo" width="35" />
+<br/>
 <img src={sqlLogo} alt="SQL Logo" width="35" />
 <img src={muiLogo} alt="Material UI Logo" width="35" />
 <img src={nodeLogo} alt="Node.js Logo" width="35" />
+<br />
 <img src={jsLogo} alt="JavaScript Logo" width="35" />
 <img src={nextLogo} alt="Next.js Logo" width="35" />
 <img src={postgreLogo} alt="PostgreSQL Logo" width="35" />
+<br />
 <img src={slackLogo} alt="Slack Logo" width="35" />
 <img src={psLogo} alt="Photoshop Logo" width="35" />
 <img src={aiLogo} alt="Adobe Illustrator Logo" width="35" />
+<br />
 <img src={figmaLogo} alt="Figma Logo" width="35" />
 
 
