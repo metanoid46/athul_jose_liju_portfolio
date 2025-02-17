@@ -2,6 +2,7 @@ import { Box, Chip, Container, Typography } from '@mui/material';
 import  { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Resume from '../../assets/Resume.pdf';
 import experienceData from './const/experiencedata'
 import educationData from './const/educationData';
 import languagesAndFrameworks from './const/languagesAndFrameworks';
@@ -74,7 +75,7 @@ export const About = () => {
         </Box>
         <br /> 
           <p style={{marginTop:"10px"}} data-aos="fade-up">
-            need a copy of my        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>??
+            need a copy of my        <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>??
         </p>
       </Container>
       </>
