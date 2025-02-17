@@ -28,7 +28,15 @@ export const Home = () => {
         </h1>
 
         <Box component="section" sx={{ mt: 10 }} data-aos="fade-up">
-        <Typography variant="subtitle1">
+          <Typography
+  variant="body1"
+  sx={{
+    fontSize: { xs: '12px', sm: '16px', md: '20px' }, // Adjust font size based on screen width
+    textAlign: 'justify',
+    lineHeight: 1.6,
+    px: { xs: 2, sm: 4, md: 0 }, // Add padding on small screens to improve readability
+  }}
+>
   I’m a <b>UI/UX designer, web developer, and computer science student</b> at the University of Wollongong,
   specializing in <b>AI and Big Data</b>. I have a deep passion for crafting seamless digital experiences that
   not only look great but also feel <b>intuitive and user-friendly</b>. My approach to design and development is
