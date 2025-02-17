@@ -94,22 +94,22 @@ export const About = () => {
           Languages and Frameworks
           <hr style={{ color: '#A12C2C' }} />
         </p>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }} data-aos="fade-up">
   {languagesAndFrameworks.map((lang, index) => (
+    <Box key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5px' }}>
       <img 
         src={lang} 
-        key={index}
         alt={`Language ${index}`} 
         style={{
-          padding:'10px',
           width: '35px', 
           height: '35px', 
           maxWidth: '100%', 
           objectFit: 'contain', // Ensure the image doesn't stretch/distort
         }} 
       />
-
+    </Box>
   ))}
-
+</Box>
 
         <br /> 
           <p style={{marginTop:"10px"}} data-aos="fade-up">
