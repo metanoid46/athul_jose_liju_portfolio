@@ -71,7 +71,7 @@ export const About = () => {
           <Box
             sx={{
               display: 'grid',
-              gridTemplateColumns: { xs: 'repeat(3, 1fr)', sm: 'repeat(4, 1fr)', md: 'repeat(16, 1fr)' },
+              gridTemplateColumns: { xs: 'repeat(3, 1fr)', sm: 'repeat(4, 1fr)', md: 'repeat(8, 1fr)' },
               gap: 2,
               justifyContent: 'center',
               alignItems: 'center',
