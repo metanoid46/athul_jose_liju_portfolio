@@ -1,6 +1,8 @@
 import { Box, Button, Container, Typography } from '@mui/material';
 import { useEffect } from 'react';
-
+import Github from '../../assets/github.svg'
+import MailIcon from '../../assets/mail.svg'
+import LinkedIn from '../../assets/linkedIn.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 export const Home = () => {
@@ -51,17 +53,17 @@ export const Home = () => {
         >
          <a href="https://www.linkedin.com/in/athuljoseliju" target="_blank" rel="noopener noreferrer">
   <Button component="span">
-    <img src='/linkedIn.svg' alt="LinkedIn" style={{ width: '35px', height: '35px' }} />
+    <img src={LinkedIn} alt="LinkedIn" style={{ width: '35px', height: '35px' }} />
   </Button>
 </a>
 <a href='https://github.com/metanoid46' target='_blank'>
           <Button>
-            <img src='/github.svg' alt="GitHub" style={{ width: '35px', height: '35px' }} />
+            <img src={Github} alt="GitHub" style={{ width: '35px', height: '35px' }} />
           </Button>
           </a>
           <a   href={`mailto:${"athuljoseliju123@gmail.com"}?subject=${""}&body=${""}`}>
           <Button>
-            <img src='/mail.svg' alt="mail"   style={{ width: '35px', height: '35px' }}/>
+            <img src={MailIcon} alt="mail"   style={{ width: '35px', height: '35px' }}/>
           </Button>
           </a>
         </Box>
