@@ -7,7 +7,7 @@ import experienceData from './const/experiencedata'
 import educationData from './const/educationData';
 import languagesAndFrameworks from './const/languagesAndFrameworks';
 
-import logo from '../../assets/logo.svg';
+
 
 export const About = () => {
     // Initialize AOS
@@ -132,7 +132,6 @@ export const About = () => {
       />
     </Box>
   ))}
-  <img src= {logo}></img>
 </Box>
 
 
