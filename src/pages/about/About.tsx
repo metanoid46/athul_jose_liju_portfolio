@@ -85,7 +85,7 @@ export const About = () => {
                 <img 
                   src={lang} 
                   alt={`Language ${index}`} 
-                  style={{ width: '100%', maxWidth: '50px', height: 'auto', minWidth: '30px' }} 
+                  style={{ maxWidth: '50px',width: '35px', height: '35px', minWidth: '30px' }} 
                 />
               </Box>
             ))}
