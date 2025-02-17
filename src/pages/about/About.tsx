@@ -44,6 +44,7 @@ export const About = () => {
     lineHeight: 1.6,
     fontWeight:'bold',
   }}>{experience.title}</Typography>
+  <br />
               <Typography
   variant="body1"
   sx={{
@@ -51,12 +52,13 @@ export const About = () => {
     textAlign: 'justify',
     lineHeight: 1.6,
   }}>{experience.company} | {experience.duration}</Typography>
+  <br />
               <Typography variant="body1" sx={{fontSize: { xs: '12px', sm: '16px', md: '20px' }, lineHeight: '1.6' }}>
                 {experience.description}
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                 {experience.skills.map((skill, skillIndex) => (
-                  <Chip key={skillIndex} label={skill} sx={{ p: 1, m: 1, bgcolor: '#A12C2C', color: '#DCC196', fontSize: '16px' }} />
+                  <Chip key={skillIndex} label={skill} sx={{ p: 1, m: 1, bgcolor: '#A12C2C', color: '#DCC196', fontSize: { xs: '8px', sm: '10px', md: '16px' } }} />
                 ))}
               </Box>
             </Box>
