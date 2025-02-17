@@ -6,7 +6,22 @@ import Resume from '../../assets/Resume.pdf';
 import experienceData from './const/experiencedata'
 import educationData from './const/educationData';
 import languagesAndFrameworks from './const/languagesAndFrameworks';
-
+import javaLogo from '../../assets/java.svg';
+import cppLogo from '../../assets/cpp.svg';
+import htmlLogo from '../../assets/html.svg';
+import cssLogo from '../../assets/css.svg';
+import pythonLogo from '../../assets/python.svg';
+import reactLogo from '../../assets/react.svg';
+import sqlLogo from '../../assets/sql.svg';
+import muiLogo from '../../assets/mui.svg';
+import nodeLogo from '../../assets/node-js.svg';
+import jsLogo from '../../assets/js.svg';
+import nextLogo from '../../assets/next.svg';
+import postgreLogo from '../../assets/postgre.svg';
+import slackLogo from '../../assets/slack.svg';
+import psLogo from '../../assets/ps.svg';
+import aiLogo from '../../assets/ai.svg';
+import figmaLogo from '../../assets/figma.svg';
 
 
 export const About = () => {
@@ -94,45 +109,23 @@ export const About = () => {
           Languages and Frameworks
           <hr style={{ color: '#A12C2C' }} />
         </p>
-        <Box 
-  sx={{
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-start',
-    gap: 1, // Add gap for spacing between images
-    margin: '0 auto', // Center content
-    maxWidth: '100%', // Ensure the content doesn't overflow
-    padding: '10px 0', // Add vertical padding for spacing
-  }} 
-  data-aos="fade-up"
->
-  {languagesAndFrameworks.map((lang, index) => (
-    <Box 
-      key={index} 
-      sx={{
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center',
-        padding: '5px',
-        width: '50px', // Control width on mobile
-        height: '50px', // Control height
-        maxWidth: '100%', // Make image responsive
-        minWidth: '40px', // Ensure smaller sizes for mobile
-        flexShrink: 0, // Prevent shrinking
-      }}
-    >
-      <img 
-        src={lang} 
-        alt={`Language ${index}`} 
-        style={{
-          width: '100%', // Make image scale properly within its container
-          height: 'auto', // Maintain aspect ratio
-          objectFit: 'contain', // Prevent stretching
-        }} 
-      />
-    </Box>
-  ))}
-</Box>
+            
+        <img src={javaLogo} alt="Java Logo" width="35" />
+<img src={cppLogo} alt="C++ Logo" width="35" />
+<img src={htmlLogo} alt="HTML Logo" width="35" />
+<img src={cssLogo} alt="CSS Logo" width="35" />
+<img src={pythonLogo} alt="Python Logo" width="35" />
+<img src={reactLogo} alt="React Logo" width="35" />
+<img src={sqlLogo} alt="SQL Logo" width="35" />
+<img src={muiLogo} alt="Material UI Logo" width="35" />
+<img src={nodeLogo} alt="Node.js Logo" width="35" />
+<img src={jsLogo} alt="JavaScript Logo" width="35" />
+<img src={nextLogo} alt="Next.js Logo" width="35" />
+<img src={postgreLogo} alt="PostgreSQL Logo" width="35" />
+<img src={slackLogo} alt="Slack Logo" width="35" />
+<img src={psLogo} alt="Photoshop Logo" width="35" />
+<img src={aiLogo} alt="Adobe Illustrator Logo" width="35" />
+<img src={figmaLogo} alt="Figma Logo" width="35" />
 
 
         <br /> 
