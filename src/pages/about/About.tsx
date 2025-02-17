@@ -101,9 +101,9 @@ export const About = () => {
         src={lang} 
         alt={`Language ${index}`} 
         style={{
-          width: '50px', 
-          height: '50px', 
-          maxWidth: '80%', 
+          width: '35px', 
+          height: '35px', 
+          maxWidth: '100%', 
           objectFit: 'contain', // Ensure the image doesn't stretch/distort
         }} 
       />
