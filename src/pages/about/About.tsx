@@ -67,6 +67,7 @@ export const About = () => {
             Languages and Frameworks
           </Typography>
           <hr style={{ color: '#A12C2C' }} />
+          <br />
 
           <Box
             sx={{
