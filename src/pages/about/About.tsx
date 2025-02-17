@@ -69,8 +69,8 @@ export const About = () => {
           <Box 
   sx={{
     display: 'grid',
-    gridTemplateColumns: { xs: 'repeat(3, 1fr)', sm: 'repeat(4, 1fr)', md: 'repeat(6, 1fr)' }, 
-    gap: 2, 
+    gridTemplateColumns: { xs: 'repeat(6, 1fr)', sm: 'repeat(10, 1fr)', md: 'repeat(16, 1fr)' }, 
+    gap: 4, 
     justifyContent: 'center',
     alignItems: 'center',
     maxWidth: '100%'
@@ -85,7 +85,7 @@ export const About = () => {
       <img 
         src={lang} 
         alt={`Language ${index}`} 
-        style={{ width: '50px', height: '50px', maxWidth: '100%', minWidth: '30px' }} 
+        style={{ maxWidth: '100%', minWidth: '20px',minHeight:'20px' }} 
       />
     </Box>
   ))}
@@ -93,6 +93,7 @@ export const About = () => {
 
 
           {/* Resume Link */}
+          <br />  
           <br /> 
           <p style={{ marginTop: "10px" }} data-aos="fade-up">
             Need a copy of my <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>??
