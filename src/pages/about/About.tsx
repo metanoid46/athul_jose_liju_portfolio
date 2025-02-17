@@ -68,10 +68,9 @@ export const About = () => {
           </p>
           <Box 
   sx={{
-    display: 'grid',
-    gridTemplateColumns: { xs: 'repeat(6, 1fr)', sm: 'repeat(10, 1fr)', md: 'repeat(16, 1fr)' }, 
-    gap: 4, 
-    justifyContent: 'center',
+    display: 'flex',
+    gap: 2, 
+    justifyContent: 'flex-start',
     alignItems: 'center',
     maxWidth: '100%'
   }} 
@@ -93,7 +92,8 @@ export const About = () => {
 
 
           {/* Resume Link */}
-          <br />  
+          <br /> 
+          <br /> 
           <br /> 
           <p style={{ marginTop: "10px" }} data-aos="fade-up">
             Need a copy of my <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>??
