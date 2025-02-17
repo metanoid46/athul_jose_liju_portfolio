@@ -103,7 +103,7 @@ export const About = () => {
         style={{
           width: '50px', 
           height: '50px', 
-          maxWidth: '100%', 
+          maxWidth: '80%', 
           objectFit: 'contain', // Ensure the image doesn't stretch/distort
         }} 
       />
