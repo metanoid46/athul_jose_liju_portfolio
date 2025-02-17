@@ -67,29 +67,30 @@ export const About = () => {
             <hr style={{ color: '#A12C2C' }} />
           </p>
           <Box 
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: { xs: 'repeat(3, 1fr)', sm: 'repeat(4, 1fr)', md: 'repeat(6, 1fr)' }, 
-              gap: 2, 
-              justifyContent: 'center',
-              alignItems: 'center',
-              maxWidth: '100%'
-            }} 
-            data-aos="fade-up"
-          >
-            {languagesAndFrameworks.map((lang, index) => (
-              <Box 
-                key={index} 
-                sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-              >
-                <img 
-                  src={lang} 
-                  alt={`Language ${index}`} 
-                  style={{ width: '50px', height: '50px', maxWidth: '100%' }} 
-                />
-              </Box>
-            ))}
-          </Box>
+  sx={{
+    display: 'grid',
+    gridTemplateColumns: { xs: 'repeat(3, 1fr)', sm: 'repeat(4, 1fr)', md: 'repeat(6, 1fr)' }, 
+    gap: 2, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    maxWidth: '100%'
+  }} 
+  data-aos="fade-up"
+>
+  {languagesAndFrameworks.map((lang, index) => (
+    <Box 
+      key={index} 
+      sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+    >
+      <img 
+        src={lang} 
+        alt={`Language ${index}`} 
+        style={{ width: '50px', height: '50px', maxWidth: '100%', minWidth: '30px' }} 
+      />
+    </Box>
+  ))}
+</Box>
+
 
           {/* Resume Link */}
           <br /> 
