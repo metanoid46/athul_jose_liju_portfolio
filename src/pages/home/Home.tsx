@@ -34,7 +34,6 @@ export const Home = () => {
     fontSize: { xs: '12px', sm: '16px', md: '20px' }, // Adjust font size based on screen width
     textAlign: 'justify',
     lineHeight: 1.6,
-    px: { xs: 2, sm: 4, md: 0 }, // Add padding on small screens to improve readability
   }}
 >
   I’m a <b>UI/UX designer, web developer, and computer science student</b> at the University of Wollongong,
